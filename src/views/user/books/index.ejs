@@ -1,0 +1,15 @@
+<%- include('../layouts/main/header'); %>
+
+<div class="jumbotron">
+  <h1>This is great</h1>
+  <p>Welcome to templating using EJS</p>
+</div>
+
+<img src="/public/assets/app/images/demo.jpg" alt="">
+<section >
+  <% books.forEach((book) => { %>
+      <div><%= book.name %></div>
+  <% }); %>
+</section>
+
+<%- include('../layouts/main/footer'); %>
